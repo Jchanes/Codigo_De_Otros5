@@ -6,14 +6,12 @@ public class Codigo5 {
 
 	    Scanner s = new Scanner(System.in);
 	    System.out.print("Introduzca un número: ");
-	    String ni = s.nextLine();
-	    int c = ni;
-	    
+	    int ni = s.nextInt();
 	    int afo = 0;
 	    int noAfo = 0;
 	    
 	    while (ni > 0) {
-		  int digito = (int)(ni%10==0);
+		  int digito = (afo%10==0);
 	      if ((digito == 3) || (digito == 7) || (digito == 8) || (digito == 9)) {
 			afo++;
 	      } else {
